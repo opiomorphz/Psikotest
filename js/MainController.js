@@ -114,16 +114,16 @@ app.controller('MainController',['$scope', function($scope){
 
         },
         12: {
-            1: 'Menyukai hal baru', 
-            2: 'Bergantung pada penampilan', 
-            3: 'Menyukai produk tradisional', 
-            4: 'Memutuskan dengan sangat hati-hati'
+            1: 'Condong ke depan', 
+            2: 'Ekspresif', 
+            3: 'Gestur yang lembut', 
+            4: 'Kaku'
         },
         13: {
-            1: 'Menyukai hal baru', 
-            2: 'Bergantung pada penampilan', 
-            3: 'Menyukai produk tradisional', 
-            4: 'Memutuskan dengan sangat hati-hati'
+            1: 'Aktivitas fisik', 
+            2: 'Berinteraksi', 
+            3: 'Meditasi', 
+            4: 'Menyendiri'
 
         },
         14: {
@@ -169,10 +169,10 @@ app.controller('MainController',['$scope', function($scope){
 
         },
         20: {
-            1: 'Pendidikan dan budaya', 
-            2: 'Pencapaian dan penghargaan', 
-            3: 'Keselamatan dan keamanan', 
-            4: 'Hal-hal social'
+            1: 'Memimpin', 
+            2: 'Mengikuti', 
+            3: 'Membujuk', 
+            4: 'Menemukan fakta'
 
         },
     };
@@ -213,11 +213,16 @@ app.controller('MainController',['$scope', function($scope){
 
     function goToResult(){
         $scope.menu = 'hasil';
-        
     }
 
     $scope.selengkapnya = function(){
         $scope.menu = 'detail';
+    };
+
+    $scope.detailFromMenu = function(gender, hasil){
+        $scope.menu = 'detail';
+        $scope.gender = gender;
+        $scope.hasil = hasil;
     };
 
     function calculate(){
