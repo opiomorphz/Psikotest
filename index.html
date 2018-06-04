@@ -33,16 +33,16 @@
                     <span class="logo">
                         <img src="image/logo.png" alt="">
                     </span>
-                    <span class="kepribadian-d" ng-click="detailFromMenu('pria', 'd')">
+                    <span class="kepribadian-d" ng-click="genderHome('d')">
                         <img src="image/d.png" alt="">
                     </span>
-                    <span class="kepribadian-i"ng-click="detailFromMenu('pria', 'i')">
+                    <span class="kepribadian-i"ng-click="genderHome('i')">
                         <img src="image/i.png" alt="">
                     </span>
-                    <span class="kepribadian-s" ng-click="detailFromMenu('wanita', 's')">
+                    <span class="kepribadian-s" ng-click="genderHome('s')">
                         <img src="image/s.png" alt="">
                     </span>
-                    <span class="kepribadian-c" ng-click="detailFromMenu('wanita', 'c')">
+                    <span class="kepribadian-c" ng-click="genderHome('c')">
                         <img src="image/c.png" alt="">
                     </span>
                     <span class="sosmed">
@@ -204,6 +204,29 @@
                     
                 </section>
             </div>
+
+            <div ng-if="menu == 'genderHome'">
+                    <section id="gender" class="background">
+                        <span class="menu dropdown">
+                            <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
+                                <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                                <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                            </div>
+                        </span>
+                        <img src="image/bg/gender.jpg" alt="">
+                        <div class="gender-btn">
+                            <span class="cewe" ng-click="detailFromMenu('wanita')">
+                                <span class="btn"></span>
+                            </span>
+                            <span class="cowo" ng-click="detailFromMenu('pria')">
+                                <span class="btn"></span>
+                            </span>
+                        </div>
+                        
+                    </section>
+                </div>
 
             <div ng-if="menu == 'caraPengerjaan'">
                 <section id="caraPengerjaan" class="background">

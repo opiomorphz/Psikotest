@@ -172,7 +172,7 @@ app.controller('MainController',['$scope', function($scope){
             1: 'Memimpin', 
             2: 'Mengikuti', 
             3: 'Membujuk', 
-            4: 'Menemukan fakta'
+            4: 'Menemukan fakta '
 
         },
     };
@@ -219,11 +219,17 @@ app.controller('MainController',['$scope', function($scope){
         $scope.menu = 'detail';
     };
 
-    $scope.detailFromMenu = function(gender, hasil){
-        $scope.menu = 'detail';
-        $scope.gender = gender;
+    $scope.genderHome = function(hasil){
+        $scope.menu = 'genderHome';
         $scope.hasil = hasil;
     };
+
+    $scope.detailFromMenu = function(gender){
+        $scope.menu = 'detail';
+        $scope.gender = gender;
+    };
+
+    
 
     function calculate(){
         if ($scope.d === $scope.i && $scope.d === $scope.s && $scope.d === $scope.c){
