@@ -88,9 +88,9 @@ app.controller('MainController',['$scope', function($scope){
             4: 'Bagaimana'
         },
         8: {
-            1: 'Tidak peka terhadap perasaan orang lain',
-            2: 'Melupakan komitmen yang pernah dibuat',
-            3: 'Lambat dalam menyelesaikan suatu masalah',
+            1: "Kurang peka",
+            2: 'Sering Lupa Janji',
+            3: 'Lambat dalam  pekerjaan',
             4: 'Banyak khawatir'
         },
         9: {
