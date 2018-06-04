@@ -1,0 +1,46 @@
+#page2{
+    position: relative;
+    .pg2-title-1{
+        position: absolute;
+        top: 380px;
+        left: 720px;
+        font-weight: bold;
+        font-size: 26pt;
+        color: #fff;
+    }
+    .pg2-title-2{
+        position: absolute;
+        top: 420px;
+        left: 720px;
+        font-weight: bold;
+        font-size: 32pt;
+        color: #fff;
+    }
+    .pg2-title-3{
+        position: absolute;
+        top: 470px;
+        left: 720px;
+        font-size: 14pt;
+        color: #666;
+    }
+    .orang{
+        position: absolute;
+        top: 270px;
+        left: 150px;
+    }
+    .benak-1{
+        position: absolute;
+        top: 80px;
+        left: 180px;
+    }
+    .benak-2{
+        position: absolute;
+        top: 50px;
+        left: 320px;
+    }
+    .benak-3{
+        position: absolute;
+        top: 120px;
+        left: 450px;
+    }
+}

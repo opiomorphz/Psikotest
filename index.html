@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Narrow" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Psikotest</title>
+    </head>
+    <body ng-app="PsikotestApp">
+        <div ng-controller="MainController">
+    
+            <div ng-if="menu == 'home'" >
+                <section id="page1" class="background">
+                    <span class="menu dropdown">
+                        <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" ng-click="changeMenu('home')">home</a>
+                            <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                            <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                        </div>
+                    </span>
+                    <img src="image/bg/bg-page-1.jpg" alt="">
+                    <div class="pg1-title-1">Masa Depan Ada <br> Di Tanganmu</div>
+                    <div class="pg1-title-2">Website ini akan memberikanmu penerangan <br>mengenai apa karakter, lingkungan dan <br> apa pekerjaanmu yang cocok berdasarkan tipe <br> kepribadian DISCmu </div>
+                    <span class="bumi">
+                        <img src="image/bumi.png" alt="">
+                    </span>
+                    <span class="logo">
+                        <img src="image/logo.png" alt="">
+                    </span>
+                    <span class="kepribadian-d">
+                        <img src="image/d.png" alt="">
+                    </span>
+                    <span class="kepribadian-i">
+                        <img src="image/i.png" alt="">
+                    </span>
+                    <span class="kepribadian-s">
+                        <img src="image/s.png" alt="">
+                    </span>
+                    <span class="kepribadian-c">
+                        <img src="image/c.png" alt="">
+                    </span>
+                    <span class="sosmed">
+                        <a href="http://instagram.com/flashlightforfuture" target="_blank">
+                            <img src="image/ig.png" alt="">
+                        </a>
+                        <a href="https://www.facebook.com/Flashlight-for-Future-454247354997453" target="_blank">
+                            <img src="image/fb" alt="">
+                        </a>
+                    </span>
+                </section>
+                
+                <section id="page2" class="background">
+                    <img src="image/bg/bg-page-2.jpg" alt="">
+                    <div class="pg2-title-1">Setelah Lulus</div>
+                    <div class="pg2-title-2">Kuliah Jurusan Apa?? </div>
+                    <div class="pg2-title-3">Seringkali pertanyaan itu muncul di benak <br>
+                            murid SMA yang hampir lulus ataupun yang <br>
+                            sudah lulus bersekolah </div>
+                    <span class="orang">
+                        <img src="image/orang.png" alt="">
+                    </span>
+                    <span class="benak-1">
+                        <img src="image/benak-1.png" alt="">
+                    </span>
+                    <span class="benak-2">
+                        <img src="image/benak-2.png" alt="">
+                    </span>
+                    <span class="benak-3">
+                        <img src="image/benak-3.png" alt="">
+                    </span>
+                </section>
+                
+                <section id="page3" class="background">
+                    <img src="image/bg/bg-page-3.jpg" alt="">
+                    <div class="pg3-title-1">Flashlight for Future</div>
+                    <div class="pg3-title-2">akan menjawab pertanyaanmu ! </div>
+                </section>
+                
+                <section id="page4" class="background">
+                    <img src="image/bg/bg-page-4.jpg" alt="">
+                    <div class="pg4-title-1">Flashlight for Future</div>
+                    <div class="pg4-title-2">memberitahu kamu</div>
+                    <span class="solusi">
+                        <img src="image/solusi.gif" alt="">
+                    </span>
+                    <div class="solusi-btn">
+                        <span class="solusi-1">
+                            <span class="btn"></span>
+                        </span>
+                        <span class="solusi-2">
+                            <span class="btn"></span>
+                        </span>
+                        <span class="solusi-3">
+                            <span class="btn"></span>
+                        </span>
+                    </div>
+                </section>
+                
+                <section id="page5" class="background">
+                    <img src="image/bg/bg-page-5.jpg" alt="">
+                    <div class="pg5-title-1">Ketahui Lebih Lanjut</div>
+                    <span class="mulai-kuis">
+                        <span class="btn"></span>
+                    </span>
+                    <span class="mulai-kuis">
+                        <span class="btn" ng-click="changeMenu('caraPengerjaan')"></span>
+                    </span>
+                    <div class="orang">
+                        <span class="orang-1">
+                            <img src="image/orang-1.png" alt="">
+                        </span>
+                        <span class="orang-2">
+                            <img src="image/orang-2.png" alt="">
+                        </span>
+                        <span class="orang-3">
+                            <img src="image/orang-3.png" alt="">
+                        </span>
+                        <span class="orang-4">
+                            <img src="image/orang-4.png" alt="">
+                        </span>
+                    </div>
+                </section>
+            </div>
+
+            <div ng-if="menu == 'about'">
+                <section id="about" class="background">
+                    <span class="menu dropdown">
+                        <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
+                            <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                            <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                        </div>
+                    </span>
+                    <img src="image/bg/about.jpg" alt="">
+                    <div class="about">
+                        <span class="about-1">
+                            <img src="image/about-1.png" alt="">
+                        </span>
+                        <span class="about-2">
+                            <img src="image/about-2.png" alt="">
+                        </span>
+                        <span class="about-3">
+                            <img src="image/about-3.png" alt="">
+                        </span>
+                    </div>
+                    
+                </section>
+            </div>
+
+            <div ng-if="menu == 'download'">
+                <span class="menu dropdown">
+                    <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
+                        <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                        <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                    </div>
+                </span>
+                <section id="download" class="background">
+                    <div class="download-title-wrapper">
+                        <span class="download-title">Wallpaper</span>
+                    </div>
+                    <div class="download-wrapper">
+                        <div class="bg">
+                            <img src="image/bg/download.jpg" alt="">
+                        </div>
+                        <div class="img" ng-repeat="download in downloads">
+                            <div class="black"></div>
+                            <img src="image/download/{{download}}.png" alt="">
+                            <a href="image/download/{{download}}-full.jpg" download="image">
+                                <img class="ico-download" src="image/download.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div ng-if="menu == 'gender'">
+                <section id="gender" class="background">
+                    <span class="menu dropdown">
+                        <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
+                            <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                            <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                        </div>
+                    </span>
+                    <img src="image/bg/gender.jpg" alt="">
+                    <div class="gender-btn">
+                        <span class="cewe" ng-click="selectGender('wanita')">
+                            <span class="btn"></span>
+                        </span>
+                        <span class="cowo" ng-click="selectGender('pria')">
+                            <span class="btn"></span>
+                        </span>
+                    </div>
+                    
+                </section>
+            </div>
+
+            <div ng-if="menu == 'caraPengerjaan'">
+                <section id="caraPengerjaan" class="background">
+                    <div class="front-ground"></div>
+                    <div class="cara-pengerjaan-wrapper">
+                        <div class="pengerjaan-title">
+                            <img src="image/cara-pengerjaan.png" alt="">
+                        </div>
+                        <div class="pengerjaan-wrapper">
+                            <span class="cara">
+                                <div class="pengerjaan-img">
+                                    <img src="image/pengerjaan-1.png" alt="">
+                                </div>
+                                <div class="pengerjaan-desc">
+                                    Hindari barang yang dapat <br>mengganggu kosentrasimu
+                                </div>
+                            </span>
+                            <span class="cara">
+                                <div class="pengerjaan-img">
+                                    <img src="image/pengerjaan-2.png" alt="">
+                                </div>
+                                <div class="pengerjaan-desc">
+                                    Pilih salah satu jawaban yang<br> menggambarkan dirimu
+                                </div>
+                            </span>
+                            <span class="cara">
+                                <div class="pengerjaan-img">
+                                    <img src="image/pengerjaan-3.png" alt="">
+                                </div>
+                                <div class="pengerjaan-desc">
+                                    Hanya butuh 5 menit untuk<br> mengerjakan soal ini
+                                </div>
+                            </span>
+                        </div>
+                        <div class="btn-ok" ng-click="changeMenu('gender')">
+                            <img src="image/btn-ok.png" alt="">
+                        </div>
+                    </div>
+                    <span class="menu dropdown">
+                        <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
+                            <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                            <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                        </div>
+                    </span>
+                    <img src="image/bg/gender.jpg" alt="">
+                    <div class="gender-btn">
+                        <span class="cewe">
+                            <span class="btn"></span>
+                        </span>
+                        <span class="cowo">
+                            <span class="btn"></span>
+                        </span>
+                    </div>
+                    
+                </section>
+            </div>
+
+            <div ng-if="menu == 'kuis'">
+                <section id="kuis" class="background">
+                    <span class="menu dropdown">
+                        <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
+                            <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                            <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                        </div>
+                    </span>
+                    <div class="pertanyaan-title">
+                        {{pertanyaanTitles[pertanyaanKe]}}
+                    </div>
+                    <div class="pertanyaan-wrapper">
+                        <div class="pertanyaan">
+                            <div class="pilihan" ng-click="nextQuestion(pertanyaanKe, kuncis[pertanyaanKe][1])">
+                                <div class="pilihan-img">
+                                    <img src="image/pertanyaan/{{pertanyaanKe}}-1-22.png" alt="">
+                                </div>
+                                <div class="pilihan-description">
+                                    {{descriptions[pertanyaanKe][1]}}
+                                </div>
+                            </div>
+                            <div class="pilihan" ng-click="nextQuestion(pertanyaanKe, kuncis[pertanyaanKe][2])">
+                                <div class="pilihan-img">
+                                    <img src="image/pertanyaan/{{pertanyaanKe}}-2-22.png" alt="">
+                                </div>
+                                <div class="pilihan-description">
+                                    {{descriptions[pertanyaanKe][2]}}
+                                </div>
+                            </div>
+                            <div class="pilihan" ng-click="nextQuestion(pertanyaanKe, kuncis[pertanyaanKe][3])">
+                                <div class="pilihan-img">
+                                    <img src="image/pertanyaan/{{pertanyaanKe}}-3-22.png" alt="">
+                                </div>
+                                <div class="pilihan-description">
+                                    {{descriptions[pertanyaanKe][3]}}
+                                </div>
+                            </div>
+                            <div class="pilihan" ng-click="nextQuestion(pertanyaanKe, kuncis[pertanyaanKe][4])">
+                                <div class="pilihan-img">
+                                    <img src="image/pertanyaan/{{pertanyaanKe}}-4-22.png" alt="">
+                                </div>
+                                <div class="pilihan-description">
+                                    {{descriptions[pertanyaanKe][4]}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bar-wrapper">
+                            <div class="bar">
+                                <span class="value">{{pertanyaanKe}}/{{pertanyaanTitles.length - 1}}</span>
+                                <span class="progress" ng-style="getProgress(pertanyaanKe, pertanyaanTitles.length - 1)"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+
+            <div ng-if="menu == 'hasil'">
+                <div id="hasil">
+                    <span class="menu dropdown">
+                        <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
+                            <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                            <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                        </div>
+                    </span>
+                    <div ng-if="hasil === 'd'">
+                        <img src="image/bg/d-{{gender}}.jpg" alt="">
+                        <div class="preview-wrapper">
+                            <div class="preview">
+                                Tipe Dominace adalah tipe yang terfokus pada pencapaian tujuan (goal oriented) dengan mengunakan kekuasaan dan otoritas yang dimiliki. Kekuatannya terletak kemampuan dalam mengambil keputusan secara cepat dan langsung. Kelemahannya adalah tidak memiliki kesabaran, kurang hati-hati dan cenderung sebagai penuntut.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div ng-if="hasil === 'i'">
+                        <img src="image/bg/i-{{gender}}.jpg" alt="">
+                        <div class="preview-wrapper">
+                            <div class="preview">
+                                Tipe influence adalah tipe yang mudah bergaul dan berkomunikasi dengan dengan orang lain. Kekuatan tipe I terletak pada pribadi yang optimis, anthusias dalam menjalankan pekerjannnya. Kelemahan dari tipe influence terkadang kurang serius dalam mengerjakan sesuatu dan menaruh curiga terhadap lingkungannya. 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div ng-if="hasil === 's'">
+                        <img src="image/bg/s-{{gender}}.jpg" alt="">
+                        <div class="preview-wrapper">
+                            <div class="preview">
+                                    Tipe Steadiness adalah tipe yang lebih berorientasi pada hubungan dengan sesama. Kekuatan dari tipe ini adalah loyalitas yang tinggi, supportif, dan cepat dalam melayani orang lain. Kelemahannya 	terletak pada pribadi yang kurang aktif dan tidak memiliki hasrat yang tinggi. Hal yang paling ditakuti oleh tipe S ini adalah 	perubahan lingkungan.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div ng-if="hasil === 'c'">
+                        <img src="image/bg/c-{{gender}}.jpg" alt="">
+                        <div class="preview-wrapper">
+                            <div class="preview">
+                                Tipe Compliance adalah tipe yang dapat bekerja dengan menggunakan aturan baku, dan perfesionist. Kehati-hatian, teliti, c	ermat, akurat, dan memiliki intuisi yang baik menjadi kekuatan dari tipe C Kelemahannya pada sikap yang terlalu kaku, keras kepala,seringkali frustasi ketika hasil yang diharapkan tidak menjadi kenyatan    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="preview-btn">
+                        <div class="btn"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="menu == 'detail'">
+                <span class="menu dropdown">
+                    <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
+                        <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                        <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                    </div>
+                </span>
+                <section id="download" class="background">
+                    <div class="download-title-wrapper">
+                        <span class="download-title">Wallpaper</span>
+                    </div>
+                    <div class="download-wrapper">
+                        <div class="bg">
+                            <img src="image/bg/download.jpg" alt="">
+                        </div>
+                        <div class="img" ng-repeat="download in downloads">
+                            <div class="black"></div>
+                            <img src="image/download/{{download}}.png" alt="">
+                            <a href="image/download/{{download}}-full.jpg" download="image">
+                                <img class="ico-download" src="image/download.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/MainController.js"> </script>
+    
+    </body>
+</html>

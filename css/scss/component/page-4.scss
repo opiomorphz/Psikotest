@@ -1,0 +1,64 @@
+#page4{
+    position: relative;
+    .pg4-title-1{
+        position: absolute;
+        top: 120px;
+        font-weight: bold;
+        font-size: 32pt;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+    }
+    .pg4-title-2{
+        position: absolute;
+        top: 165px;
+        font-size: 26pt;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+    }
+    .solusi{
+        position: absolute;
+        top: 170px;
+        width: 100%;
+        text-align: center;
+    }
+    .solusi-btn{
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 480px;
+        .solusi-1{
+            .btn{
+                background-image: url('../image/solusi-1.png');
+                width: 224px;
+                height: 215px;
+            }
+            .btn:hover{
+                background-image: url('../image/solusi-1-hover.png');
+            }
+        }
+        .solusi-2{
+            .btn{
+                background-image: url('../image/solusi-2.png');
+                width: 224px;
+                height: 215px;
+            }
+            .btn:hover{
+                background-image: url('../image/solusi-2-hover.png');
+            }
+        }
+        .solusi-3{
+            .btn{
+                background-image: url('../image/solusi-3.png');
+                width: 224px;
+                height: 215px;
+            }
+            .btn:hover{
+                background-image: url('../image/solusi-3-hover.png');
+            }
+        }
+    }
+
+}

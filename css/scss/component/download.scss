@@ -1,0 +1,56 @@
+#download{
+    position: relative;
+    .download-title-wrapper{
+        text-align: center;
+        margin-top: 70px;
+        .download-title{
+            background: #423d8d;
+            padding: 5px 55px;
+            border-radius: 15px;
+            color: #fff;
+            font-size: 23px;
+        }
+    }
+    .download-wrapper{
+        width: 764px;
+        margin: 20px auto;
+        z-index: 1;
+        .img{
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            .black{
+                position: absolute;
+                z-index: 2;
+                background: #000;
+                width: 381px;
+                height: 239px;
+                opacity: 0;
+            }
+            .ico-download{
+                cursor: pointer;
+                position: absolute;
+                top: 100px;
+                left: 160px;
+                z-index: 3;             
+            }
+        }
+        .img:hover{
+            .black{
+                position: absolute;
+                z-index: 2;
+                background: #000;
+                width: 381px;
+                height: 239px;
+                opacity: 0.5;
+            }
+        }
+    } 
+    .bg{
+        position: absolute;
+        bottom: -90px;
+        z-index: 0;
+        left: 0;
+    }   
+    
+}

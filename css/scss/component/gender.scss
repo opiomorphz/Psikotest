@@ -1,0 +1,61 @@
+#gender{
+    position: relative;
+    .about{
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 300px;
+        .about-1{
+            // position: absolute;
+        }
+        .about-2{
+            // position: absolute;
+        }
+        .about-3{
+            // position: absolute;
+        }
+    }
+    .menu{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        .btn{
+            background-image: url('../image/menu.png');
+            background-repeat: no-repeat;
+            width: 55px;
+            height: 56px;
+        }
+        .btn:hover{
+            opacity: 0.6;
+        }
+    }
+
+    .gender-btn{
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 300px;
+        .cewe{
+            .btn{
+                background-image: url('../image/cewe.png');
+                width: 227px;
+                height: 227px;
+            }
+            .btn:hover{
+                background-image: url('../image/cewe-hover.gif');
+            }
+        }
+        .cowo{
+            .btn{
+                background-image: url('../image/cowo.png');
+                width: 227px;
+                height: 227px;
+            }
+            .btn:hover{
+                background-image: url('../image/cowo-hover.gif');
+            }
+        }
+    }
+}
