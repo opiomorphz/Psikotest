@@ -1,51 +1,101 @@
 #detail{
     position: relative;
-    .download-title-wrapper{
-        text-align: center;
-        margin-top: 70px;
-        .download-title{
-            background: #423d8d;
-            padding: 5px 55px;
-            border-radius: 15px;
-            color: #fff;
-            font-size: 23px;
+    .part{
+        padding: 0;
+        margin: 0;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .title-wrapper{
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            text-align: center;
+            .title{
+                &.red{
+                    background: #84313d;
+                }
+                &.blue{
+                    background: #3a4b85;
+                }
+                &.yellow{
+                    background: #ec9c00;
+                }
+                &.green{
+                    background: #30897e;
+                }
+                color: #fff;
+                padding: 7px 30px;
+                border-radius: 20px; 
+            }
+        }
+        .karakter-wrapper{
+            position: absolute;
+            width: 100%;
+            top: 150px;
+            .karakter-container{
+                margin: 0 auto;
+                width: 700px;
+                .karakter{
+                    margin: 0 20px;
+                    width: 186px;
+                    height: 230px;
+                    display: inline-block;
+                    text-align: center;
+                    .desc{  
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        .awan-left-wrapper{
+            position: absolute;
+            z-index: 2;
+            top: 100px;
+            left: 100px;
+            .awan{
+                background-image: url('../image/detail/1/awan-hitam.png');
+                width: 315px;
+                height: 183px;
+            }
+            .description{
+                margin-top: 30px;
+                color: #fff;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center
+            }
+        }
+        .awan-right-wrapper{
+            position: absolute;
+            z-index: 2;
+            top: 100px;
+            right: 100px;
+            .awan{
+                background-image: url('../image/detail/1/awan-putih.png');
+                width: 315px;
+                height: 183px;
+            }
+            .description{
+                margin-top: 30px;
+                color: #fff;
+                font-size: 14px;
+                line-height: 18px;
+                text-align: center
+            }
         }
     }
-    .download-wrapper{
-        width: 764px;
-        margin: 20px auto;
-        z-index: 1;
-        .img{
-            display: inline-block;
-            position: relative;
-            text-align: center;
-            .black{
-                position: absolute;
-                z-index: 2;
-                background: #000;
-                width: 381px;
-                height: 239px;
-                opacity: 0;
-            }
-            .ico-download{
-                cursor: pointer;
-                position: absolute;
-                top: 100px;
-                left: 160px;
-                z-index: 3;             
-            }
-        }
-        .img:hover{
-            .black{
-                position: absolute;
-                z-index: 2;
-                background: #000;
-                width: 381px;
-                height: 239px;
-                opacity: 0.5;
-            }
-        }
-    } 
+    .ketiga{
+        
+    }
+    .keempat{
+        
+    }
+    .kelima{
+        
+    }
     .bg{
         position: absolute;
         bottom: -90px;

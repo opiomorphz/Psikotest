@@ -207,16 +207,18 @@ app.controller('MainController',['$scope', function($scope){
         ['', 'd', 's', 'i', 'c'], //20
     ];
 
-    $scope.menu = 'hasil';
-    $scope.gender = 'pria';
-    $scope.hasil = 'd';
+    // $scope.menu = 'detail';
+    // $scope.gender = 'wanita';
+    // $scope.hasil = 'd';
 
     function goToResult(){
         $scope.menu = 'hasil';
-        console.log($scope.gender);
-        console.log($scope.hasil);
         
     }
+
+    $scope.selengkapnya = function(){
+        $scope.menu = 'detail';
+    };
 
     function calculate(){
         if ($scope.d === $scope.i && $scope.d === $scope.s && $scope.d === $scope.c){

@@ -368,7 +368,7 @@
                         </div>
                     </div>
 
-                    <div class="preview-btn">
+                    <div class="preview-btn" ng-click="selengkapnya()">
                         <div class="btn"></div>
                     </div>
                 </div>
@@ -383,20 +383,412 @@
                         <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
                     </div>
                 </span>
-                <section id="download" class="background">
-                    <div class="download-title-wrapper">
-                        <span class="download-title">Wallpaper</span>
-                    </div>
-                    <div class="download-wrapper">
-                        <div class="bg">
-                            <img src="image/bg/download.jpg" alt="">
+                <section id="detail" class="background">
+                    <div ng-if="hasil == 'd'">
+                        <div class="part">
+                            <img src="image/detail/1/awal-{{gender}}.gif" alt="">
                         </div>
-                        <div class="img" ng-repeat="download in downloads">
-                            <div class="black"></div>
-                            <img src="image/download/{{download}}.png" alt="">
-                            <a href="image/download/{{download}}-full.jpg" download="image">
-                                <img class="ico-download" src="image/download.png" alt="">
-                            </a>
+                        <div class="part">
+                            <img src="image/detail/1/bg-2.png" alt="">
+                            <div class="title-wrapper">
+                                <span class="title red">Karakter umum</span>
+                            </div>
+                            <div class="karakter-wrapper">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/1/karakter1.png" alt="">
+                                        <div class="desc">Gigih, tidak mudah menyerah</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/1/karakter2-{{gender}}.png" alt="">
+                                        <div class="desc">Pemecah masalah yang baik</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/1/karakter3-{{gender}}.png" alt="">
+                                        <div class="desc">Berani mencoba hal baru</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/1/karakter4.png" alt="">
+                                        <div class="desc">Mengontrol orang lain</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/1/karakter5-{{gender}}.png" alt="">
+                                        <div class="desc">Bekerja cepat dan efisien</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/1/karakter6.png" alt="">
+                                        <div class="desc">Berorientasi pada hasil daripada hubungan</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/1/lingkungan-{{gender}}.jpg" alt="">
+                            <div class="awan-left-wrapper">
+                                <div class="awan"></div>
+                                <div class="description">
+                                    Memaksakan kehendak kepada orang lain <br><br><br>
+                                    Beragrumen untuk menunjukkan diri berkuasa <br><br><br>
+                                    Egois ingin menang sendiri
+                                </div>
+                            </div>
+                            <div class="awan-right-wrapper">
+                                <div class="awan"></div>
+                                <div class="description">
+                                    Pekerjaan yang menantang dan penuh peluang <br><br><br> 
+                                    Lingkungan yang berorientasi pada masa depan <br><br><br> 
+                                    Bebas dan tidak diawasi
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/1/bg-4.png" alt="">
+                            <div class="title-wrapper" style="top: 150px;">
+                                <span class="title red">Pekerjaan</span>
+                            </div>
+                            <div class="karakter-wrapper" style="top: 280px;">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/1/pekerjaan1.png" alt="">
+                                        <div class="desc">Pengusaha</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/1/pekerjaan2.png" alt="">
+                                        <div class="desc">Pengacara</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/1/pekerjaan3.png" alt="">
+                                        <div class="desc">Produser film</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/1/bg-5.png" alt="">
+                            <div class="title-wrapper" style="top: 150px;">
+                                <span class="title red">Tokoh dengan tipe D</span>
+                            </div>
+                            <div class="karakter-wrapper" style="top: 280px;">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/1/tokoh1.png" alt="">
+                                        <div class="desc">Madonna</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/1/tokoh2.png" alt="">
+                                        <div class="desc">Christian Ronaldo</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/1/tokoh3.png" alt="">
+                                        <div class="desc">Ir. Soekarno</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="hasil == 'i'">
+                        <div class="part">
+                            <img src="image/detail/2/awal-{{gender}}.gif" alt="">
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/2/bg-2.png" alt="">
+                            <div class="title-wrapper">
+                                <span class="title yellow">Karakter umum</span>
+                            </div>
+                            <div class="karakter-wrapper">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/2/karakter1-{{gender}}.png" alt="">
+                                        <div class="desc">Bersahabat dan mudah bergaul</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/2/karakter2.png" alt="">
+                                        <div class="desc">Pembicara yang baik</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/2/karakter3.png" alt="">
+                                        <div class="desc">Perlu bantuan untuk terorganisir</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/2/karakter4-{{gender}}.png" alt="">
+                                        <div class="desc">Sangat membenci angka</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/2/karakter5.png" alt="">
+                                        <div class="desc">Berfikir 	secara emosional</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/2/karakter6-{{gender}}.png" alt="">
+                                        <div class="desc">Pelupa</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/2/lingkungan-{{gender}}.jpg" alt="">
+                            <div class="awan-left-wrapper">
+                                <div class="awan"></div>
+                                <div class="description">
+                                        Menjadi narsis <br><br><br>
+                                        mempromosikan diri sendiri <br><br><br>
+                                        Menjadi bawel dan menjengkelkan <br><br><br>
+                                        Menjadi terlalu optimistik
+                                </div>
+                            </div>
+                            <div class="awan-right-wrapper">
+                                <div class="awan"></div>
+                                <div class="description">
+                                        Banyak kesempatan berhubugan dengan orang lain<br><br><br> 
+                                        Bebas bergerak kemana saja<br><br><br> 
+                                        Mempunyai kesempatan untuk mengekspresikan diri
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/2/bg-4.png" alt="">
+                            <div class="title-wrapper" style="top: 150px;">
+                                <span class="title yellow">Pekerjaan</span>
+                            </div>
+                            <div class="karakter-wrapper" style="top: 280px;">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/2/pekerjaan1.png" alt="">
+                                        <div class="desc">Guru</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/2/pekerjaan2.png" alt="">
+                                        <div class="desc">Marketing</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/2/pekerjaan3.png" alt="">
+                                        <div class="desc">Perawat</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/2/bg-5.jpg" alt="">
+                            <div class="title-wrapper" style="top: 150px;">
+                                <span class="title yellow">Tokoh dengan tipe D</span>
+                            </div>
+                            <div class="karakter-wrapper" style="top: 280px;">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/2/tokoh1.png" alt="">
+                                        <div class="desc">Oprah Winfrey</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/2/tokoh2.png" alt="">
+                                        <div class="desc">Gusdur</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/2/tokoh3.png" alt="">
+                                        <div class="desc">Mohammad Ali</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="hasil == 's'">
+                        <div class="part">
+                            <img src="image/detail/3/awal-{{gender}}.gif" alt="">
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/3/bg-2.png" alt="">
+                            <div class="title-wrapper">
+                                <span class="title green">Karakter umum</span>
+                            </div>
+                            <div class="karakter-wrapper">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/3/karakter1-{{gender}}.png" alt="">
+                                        <div class="desc">Lebih suka menyendiri</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/3/karakter2.png" alt="">
+                                        <div class="desc">Berfikir logis, faktual dan sistematis</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/3/karakter3.png" alt="">
+                                        <div class="desc">Mencari ketenangan dan kedamaian</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/3/karakter4-{{gender}}.png" alt="">
+                                        <div class="desc">Pendengar yang baik</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/3/karakter5-{{gender}}.png" alt="">
+                                        <div class="desc">Memperhatikan orang lain</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/3/karakter6-{{gender}}.png" alt="">
+                                        <div class="desc">Lama dalam mengerjalan tugas</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/3/lingkungan-{{gender}}.jpg" alt="">
+                            <div class="awan-left-wrapper">
+                                <div class="awan"></div>
+                                <div class="description">
+                                    Cuek dan tidak perhatian sama sekali, Menjadi ragu dalam bertindak / berbicara<br><br><br>
+                                    Tidak menunjukkan perubahan raut wajah
+                                </div>
+                            </div>
+                            <div class="awan-right-wrapper">
+                                <div class="awan"></div>
+                                <div class="description">
+                                    Lingkungan yang minim konflik<br><br><br> 
+                                    Memberikan waktu yang tidak mepet <br><br><br> 
+                                    Kebebasan dari peraturan mengekang
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/3/bg-4.png" alt="">
+                            <div class="title-wrapper" style="top: 150px;">
+                                <span class="title green">Pekerjaan</span>
+                            </div>
+                            <div class="karakter-wrapper" style="top: 280px;">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/3/pekerjaan1.png" alt="">
+                                        <div class="desc">Dokter</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/3/pekerjaan2.png" alt="">
+                                        <div class="desc">Desainer</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/3/pekerjaan3.png" alt="">
+                                        <div class="desc">Juru Masak</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/3/bg-5.png" alt="">
+                            <div class="title-wrapper" style="top: 150px;">
+                                <span class="title green">Tokoh dengan tipe D</span>
+                            </div>
+                            <div class="karakter-wrapper" style="top: 280px;">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/3/tokoh1.png" alt="">
+                                        <div class="desc">Mahatma Gandhi</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/3/tokoh2.png" alt="">
+                                        <div class="desc">Lady Diana</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/3/tokoh3.png" alt="">
+                                        <div class="desc">Susilo Bambang Yudhoyono</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-if="hasil == 'c'">
+                        <div class="part">
+                            <img src="image/detail/4/awal-{{gender}}.gif" alt="">
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/4/bg-2.png" alt="">
+                            <div class="title-wrapper">
+                                <span class="title blue">Karakter umum</span>
+                            </div>
+                            <div class="karakter-wrapper">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/4/karakter1.png" alt="">
+                                        <div class="desc">Lebih percaya data</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/4/karakter2.png" alt="">
+                                        <div class="desc">Sangat mengikuti prosedur</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/4/karakter3.png" alt="">
+                                        <div class="desc">Perlu mengetahui 	proses</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/4/karakter4-{{gender}}.png" alt="">
+                                        <div class="desc">Tidak suka keramaian</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/4/karakter5.png" alt="">
+                                        <div class="desc">Mempunyai standart yang tinggi</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/4/karakter6.png" alt="">
+                                        <div class="desc">Meneliti ulang untuk keakuratan</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/4/lingkungan-{{gender}}.jpg" alt="">
+                            <div class="awan-left-wrapper">
+                                <div class="awan"></div>
+                                <div class="description">
+                                        Pesimis. berfikir dari sisi buruknya <br>Menunjukkan kekhawatiran yang berlebihan <br><br><br>
+                                        Menjadi teralu mengkritisi segala hal
+                                </div>
+                            </div>
+                            <div class="awan-right-wrapper">
+                                <div class="awan"></div>
+                                <div class="description">
+                                        Lingkungan yang butuh pemikiran kritis <br><br><br> 
+                                        Ruang kerja private / pribadi <br><br><br> 
+                                        Area yang butuh kemampuan teknis
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/4/bg-4.png" alt="">
+                            <div class="title-wrapper" style="top: 150px;">
+                                <span class="title blue">Pekerjaan</span>
+                            </div>
+                            <div class="karakter-wrapper" style="top: 280px;">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/4/pekerjaan1.png" alt="">
+                                        <div class="desc">Akuntan</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/4/pekerjaan2.png" alt="">
+                                        <div class="desc">Programmer</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/4/pekerjaan3.png" alt="">
+                                        <div class="desc">Arsitek</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="part">
+                            <img src="image/detail/4/bg-5.png" alt="">
+                            <div class="title-wrapper" style="top: 150px;">
+                                <span class="title blue">Tokoh dengan tipe D</span>
+                            </div>
+                            <div class="karakter-wrapper" style="top: 280px;">
+                                <div class="karakter-container">
+                                    <div class="karakter">
+                                        <img src="image/detail/4/tokoh1.png" alt="">
+                                        <div class="desc">Bill Gates</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/4/tokoh2.png" alt="">
+                                        <div class="desc">Albert Einsten</div>
+                                    </div>
+                                    <div class="karakter">
+                                        <img src="image/detail/4/tokoh3.png" alt="">
+                                        <div class="desc">Bj Habibie</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
