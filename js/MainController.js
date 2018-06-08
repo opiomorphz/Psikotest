@@ -209,7 +209,7 @@ app.controller('MainController',['$scope', function($scope){
 
     // $scope.menu = 'detail';
     // $scope.gender = 'wanita';
-    // $scope.hasil = 'd';
+    // $scope.hasil = 'c';
 
     function goToResult(){
         $scope.menu = 'hasil';

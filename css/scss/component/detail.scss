@@ -51,34 +51,83 @@
             }
         }
         .awan-left-wrapper{
-            display: none;
             position: absolute;
             z-index: 2;
-            top: 100px;
-            left: 100px;
+            top: 130px;
+            left: 140px;
             .awan{
-                background-image: url('../image/detail/1/awan-hitam.png');
-                width: 315px;
-                height: 183px;
+                width: 307px;
+                height: 209px;
+                &.d{
+                    background-image: url('../image/detail/1/awan-hitam.jpg');
+                }
+                &.i{
+                    background-image: url('../image/detail/2/awan-hitam.jpg');
+                }
+                &.s{
+                    background-image: url('../image/detail/3/awan-hitam.jpg');
+                }
+                &.c{
+                    background-image: url('../image/detail/4/awan-hitam.jpg');
+                }
             }
+            .awan:hover{
+                &.d{
+                    background-image: url('../image/detail/1/awan-hitam-hover.gif');
+                }
+                &.i{
+                    background-image: url('../image/detail/2/awan-hitam-hover.gif');
+                }
+                &.s{
+                    background-image: url('../image/detail/3/awan-hitam-hover.gif');
+                }
+                &.c{
+                    background-image: url('../image/detail/4/awan-hitam-hover.gif');
+                }
+            }
+
             .description{
                 margin-top: 30px;
                 color: #fff;
-                font-size: 14px;
+                font-size: 15px;
                 line-height: 18px;
                 text-align: center
             }
         }
         .awan-right-wrapper{
-            display: none;
             position: absolute;
             z-index: 2;
-            top: 100px;
-            right: 100px;
+            top: 130px;
+            right: 140px;
             .awan{
-                background-image: url('../image/detail/1/awan-putih.png');
-                width: 315px;
-                height: 183px;
+                width: 307px;
+                height: 209px;
+                &.d{
+                    background-image: url('../image/detail/1/awan-putih.jpg');
+                }
+                &.i{
+                    background-image: url('../image/detail/2/awan-putih.jpg');
+                }
+                &.s{
+                    background-image: url('../image/detail/3/awan-putih.jpg');
+                }
+                &.c{
+                    background-image: url('../image/detail/4/awan-putih.jpg');
+                }
+            }
+            .awan:hover{
+                &.d{
+                    background-image: url('../image/detail/1/awan-putih-hover.gif');
+                }
+                &.i{
+                    background-image: url('../image/detail/2/awan-putih-hover.gif');
+                }
+                &.s{
+                    background-image: url('../image/detail/3/awan-putih-hover.gif');
+                }
+                &.c{
+                    background-image: url('../image/detail/4/awan-putih-hover.gif');
+                }
             }
             .description{
                 margin-top: 30px;

@@ -6,14 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=PT+Sans+Narrow" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <title>Psikotest</title>
     </head>
     <body ng-app="PsikotestApp">
         <div ng-controller="MainController">
-    
             <div ng-if="menu == 'home'" >
                 <section id="page1" class="background">
                     <span class="menu dropdown">
@@ -139,17 +137,19 @@
                         </div>
                     </span>
                     <img class="back" src="image/bg/about.jpg" alt="">
-                    <!-- <div class="about">
-                        <span class="about-1">
-                            <img src="image/about-1.png" alt="">
-                        </span>
-                        <span class="about-2">
-                            <img src="image/about-2.png" alt="">
-                        </span>
-                        <span class="about-3">
-                            <img src="image/about-3.png" alt="">
-                        </span>
-                    </div> -->
+                    <div class="about-wrapper">
+                        <div class="about-item">
+                            <span class="about-1">
+                                <img src="image/about-1.png" alt="">
+                            </span>
+                            <span class="about-2">
+                                <img src="image/about-2.png" alt="">
+                            </span>
+                            <span class="about-3">
+                                <img src="image/about-3.png" alt="">
+                            </span>
+                        </div>
+                    </div>
                     
                 </section>
             </div>
@@ -444,7 +444,7 @@
                                     </div>
                                     <div class="karakter">
                                         <img src="image/detail/1/karakter6.png" alt="">
-                                        <div class="desc">Berorientasi pada hasil daripada hubungan</div>
+                                        <div class="desc">Berorientasi pada hasil</div>
                                     </div>
                                 </div>
                             </div>
@@ -452,18 +452,18 @@
                         <div class="part">
                             <img src="image/detail/1/lingkungan-{{gender}}.jpg" alt="">
                             <div class="awan-left-wrapper">
-                                <div class="awan"></div>
+                                <div class="awan d"></div>
                                 <div class="description">
-                                    Memaksakan kehendak kepada orang lain <br><br><br>
-                                    Beragrumen untuk menunjukkan diri berkuasa <br><br><br>
+                                    Memaksakan kehendak <br> kepada orang lain <br><br><br>
+                                    Beragrumen untuk <br>menunjukkan diri berkuasa <br><br><br>
                                     Egois ingin menang sendiri
                                 </div>
                             </div>
                             <div class="awan-right-wrapper">
-                                <div class="awan"></div>
+                                <div class="awan d"></div>
                                 <div class="description">
-                                    Pekerjaan yang menantang dan penuh peluang <br><br><br> 
-                                    Lingkungan yang berorientasi pada masa depan <br><br><br> 
+                                    Pekerjaan yang menantang <br>dan penuh peluang <br><br><br> 
+                                    Lingkungan yang berorientasi <br>pada masa depan <br><br><br> 
                                     Bebas dan tidak diawasi
                                 </div>
                             </div>
@@ -530,7 +530,7 @@
                                     </div>
                                     <div class="karakter">
                                         <img src="image/detail/2/karakter2.png" alt="">
-                                        <div class="desc">Pembicara yang baik</div>
+                                        <div class="desc">Pembicara yang baik dimuka umum</div>
                                     </div>
                                     <div class="karakter">
                                         <img src="image/detail/2/karakter3.png" alt="">
@@ -554,20 +554,19 @@
                         <div class="part">
                             <img src="image/detail/2/lingkungan-{{gender}}.jpg" alt="">
                             <div class="awan-left-wrapper">
-                                <div class="awan"></div>
+                                <div class="awan i"></div>
                                 <div class="description">
-                                        Menjadi narsis <br><br><br>
-                                        mempromosikan diri sendiri <br><br><br>
-                                        Menjadi bawel dan menjengkelkan <br><br><br>
-                                        Menjadi terlalu optimistik
+                                        Menjadi narsis <br>mempromosikan diri sendiri <br><br><br>
+                                        Menjadi bawel dan <br>menjengkelkan <br><br><br>
+                                        Menjadi terlalu <br>optimistik
                                 </div>
                             </div>
                             <div class="awan-right-wrapper">
-                                <div class="awan"></div>
+                                <div class="awan i"></div>
                                 <div class="description">
-                                        Banyak kesempatan berhubugan dengan orang lain<br><br><br> 
-                                        Bebas bergerak kemana saja<br><br><br> 
-                                        Mempunyai kesempatan untuk mengekspresikan diri
+                                        Banyak kesempatan berhubugan <br>dengan orang lain<br><br><br> 
+                                        Bebas bergerak<br> kemana saja<br><br><br> 
+                                        Mempunyai kesempatan<br> untuk mengekspresikan diri
                                 </div>
                             </div>
                         </div>
@@ -629,7 +628,7 @@
                                 <div class="karakter-container">
                                     <div class="karakter">
                                         <img src="image/detail/3/karakter1-{{gender}}.png" alt="">
-                                        <div class="desc">Lebih suka menyendiri</div>
+                                        <div class="desc">Lebih suka menyendiri mencuri ketenangan</div>
                                     </div>
                                     <div class="karakter">
                                         <img src="image/detail/3/karakter2.png" alt="">
@@ -649,7 +648,7 @@
                                     </div>
                                     <div class="karakter">
                                         <img src="image/detail/3/karakter6-{{gender}}.png" alt="">
-                                        <div class="desc">Lama dalam mengerjalan tugas</div>
+                                        <div class="desc">Lama dalam bekerja</div>
                                     </div>
                                 </div>
                             </div>
@@ -657,18 +656,19 @@
                         <div class="part">
                             <img src="image/detail/3/lingkungan-{{gender}}.jpg" alt="">
                             <div class="awan-left-wrapper">
-                                <div class="awan"></div>
+                                <div class="awan s"></div>
                                 <div class="description">
-                                    Cuek dan tidak perhatian sama sekali, Menjadi ragu dalam bertindak / berbicara<br><br><br>
-                                    Tidak menunjukkan perubahan raut wajah
+                                    Cuek dan tidak perhatian <br>sama sekali <br><br><br>
+                                    Menjadi ragu dalam <br>bertindak / berbicara<br><br><br>
+                                    Tidak menunjukkan <br>perubahan raut wajah
                                 </div>
                             </div>
                             <div class="awan-right-wrapper">
-                                <div class="awan"></div>
+                                <div class="awan s"></div>
                                 <div class="description">
-                                    Lingkungan yang minim konflik<br><br><br> 
-                                    Memberikan waktu yang tidak mepet <br><br><br> 
-                                    Kebebasan dari peraturan mengekang
+                                    Lingkungan yang <br>minim konflik<br><br><br> 
+                                    Memberikan waktu <br>yang tidak mepet <br><br><br> 
+                                    Kebebasan dari peraturan<br> mengekang
                                 </div>
                             </div>
                         </div>
@@ -758,18 +758,19 @@
                         <div class="part">
                             <img src="image/detail/4/lingkungan-{{gender}}.jpg" alt="">
                             <div class="awan-left-wrapper">
-                                <div class="awan"></div>
+                                <div class="awan c"></div>
                                 <div class="description">
-                                        Pesimis. berfikir dari sisi buruknya <br>Menunjukkan kekhawatiran yang berlebihan <br><br><br>
-                                        Menjadi teralu mengkritisi segala hal
+                                        Pesimis. berfikir dari <br> sisi buruknya <br><br><br>
+                                        Menunjukkan kekhawatiran <br>yang berlebihan <br><br><br>
+                                        Menjadi teralu mengkritisi<br> segala hal
                                 </div>
                             </div>
                             <div class="awan-right-wrapper">
-                                <div class="awan"></div>
+                                <div class="awan c"></div>
                                 <div class="description">
-                                        Lingkungan yang butuh pemikiran kritis <br><br><br> 
-                                        Ruang kerja private / pribadi <br><br><br> 
-                                        Area yang butuh kemampuan teknis
+                                        Lingkungan yang butuh <br>pemikiran kritis <br><br><br> 
+                                        Ruang kerja <br>private / pribadi <br><br><br> 
+                                        Area yang butuh <br>kemampuan teknis
                                 </div>
                             </div>
                         </div>
@@ -825,13 +826,16 @@
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
         
         <script src="js/angular.min.js"></script>
         <script src="js/app.js"></script>
         <script src="js/MainController.js"> </script>
+
+        <!-- directive -->
+        <!-- <script src="js/directives/menu.js"> </script> -->
     
     </body>
 </html>

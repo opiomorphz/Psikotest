@@ -4,7 +4,7 @@
         position: absolute;
         width: 100%;
         text-align: center;
-        top: 120px;
+        top: 90px;
         font-size: 26px;
         font-weight: bold;
     }
@@ -12,7 +12,7 @@
         position: absolute;
         width: 100%;
         text-align: center;
-        top: 170px;
+        top: 140px;
         .pertanyaan{
             width: 442px;
             margin: 0 auto;
@@ -21,10 +21,27 @@
                 width: 220px;
                 height: 230px;
                 cursor: pointer;
+                .pilihan-img{
+                    img{
+                        border-radius: 50%;
+                        border: 6px solid #fff;
+                    }
+                }
                 .pilihan-description{
                     margin-top: 5px;
                     font-size: 14px;
                     line-height: 18px;
+                }
+            }
+            .pilihan:hover{
+                .pilihan-img{
+                    img{
+                        border-radius: 50%;
+                        border: 6px solid rgba(236, 156, 0, .5);
+                        box-shadow: inset 0px 0px 0px 10px rgba(236, 156, 0, .5);
+                        transition: border .4s, box-shadow .4s;
+                        -webkit-transition: border .4s, box-shadow .4s;
+                    }
                 }
             }
         }
@@ -58,6 +75,8 @@
                     top: 0;
                     height: 23px;
                     background: #fa9927;
+                    transition: width .4s;
+                    -webkit-transition: width 3.4s;
                 }
             }
         }

@@ -4,20 +4,27 @@
     .back{
         width: 100%;
     }
-    .about{
+    .about-wrapper{
         z-index: 1;
         width: 100%;
-        text-align: center;
         position: absolute;
         top: 300px;
-        .about-1{
-            // position: absolute;
-        }
-        .about-2{
-            // position: absolute;
-        }
-        .about-3{
-            // position: absolute;
+        .about-item{
+            width: 970px;
+            margin: 0 auto;
+            .about-1{
+                width: 329px;
+                position: relative;
+                top: -60px;
+            }
+            .about-2{
+                width: 299px;
+            }
+            .about-3{
+                width: 320px;
+                position: relative;
+                top: -40px;
+            }
         }
     }
     .menu{
