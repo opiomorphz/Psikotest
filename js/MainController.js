@@ -207,9 +207,9 @@ app.controller('MainController',['$scope', function($scope){
         ['', 'd', 's', 'i', 'c'], //20
     ];
 
-    // $scope.menu = 'detail';
-    // $scope.gender = 'wanita';
-    // $scope.hasil = 'c';
+    $scope.menu = 'detail';
+    $scope.gender = 'wanita';
+    $scope.hasil = 'd';
 
     function goToResult(){
         $scope.menu = 'hasil';
