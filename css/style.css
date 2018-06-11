@@ -304,18 +304,18 @@ body {
     position: absolute;
     top: 300px; }
     #about .about-wrapper .about-item {
-      width: 970px;
-      margin: 0 auto; }
+      width: 329px;
+      margin: 0 auto;
+      position: relative; }
       #about .about-wrapper .about-item .about-1 {
         width: 329px;
-        position: relative;
-        top: -60px; }
+        position: absolute; }
       #about .about-wrapper .about-item .about-2 {
-        width: 299px; }
+        width: 299px;
+        position: absolute; }
       #about .about-wrapper .about-item .about-3 {
         width: 320px;
-        position: relative;
-        top: -40px; }
+        position: absolute; }
   #about .menu {
     position: absolute;
     top: 20px;
@@ -327,6 +327,28 @@ body {
       height: 56px; }
     #about .menu .btn:hover {
       opacity: 0.6; }
+
+.pos-left {
+  top: -80px;
+  left: -340px; }
+
+.pos-right {
+  top: -55px;
+  right: -300px; }
+
+.slide-left {
+  top: -79px;
+  left: -298px;
+  -webkit-transition: left 0.6s;
+  /* Safari */
+  transition: left .6s; }
+
+.slide-right {
+  right: -259px;
+  top: -54px;
+  -webkit-transition: right 0.6s;
+  /* Safari */
+  transition: right .6s; }
 
 #gender {
   position: relative; }
@@ -661,7 +683,7 @@ body {
         width: 307px;
         height: 209px; }
         #detail .part .awan-left-wrapper .awan.d {
-          background-image: url("../image/detail/1/awan-hitam.jpg"); }
+          background-image: url("../image/detail/1/awan-hitam.png"); }
         #detail .part .awan-left-wrapper .awan.i {
           background-image: url("../image/detail/2/awan-hitam.jpg"); }
         #detail .part .awan-left-wrapper .awan.s {

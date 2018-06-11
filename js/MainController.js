@@ -1,14 +1,13 @@
-app.controller('MainController',['$scope', function($scope){
-    $scope.menu = 'home';
-    $scope.changeMenu = function(menu){
-        $scope.menu = menu;
-    };
-
-    $scope.gender = '';
+app.controller('MainController', function($scope, $rootScope){
+    if ($rootScope.result === undefined){
+        $rootScope.menu = 'home';
+        $rootScope.gender = '';
+        $rootScope.hasil = '';
+    }
     
     $scope.selectGender = function(gender){
-        $scope.gender = gender;
-        $scope.menu = 'kuis';
+        $rootScope.gender = gender;
+        $rootScope.menu = 'kuis';
         $scope.pertanyaanKe = 1;
     };
 
@@ -88,7 +87,7 @@ app.controller('MainController',['$scope', function($scope){
             4: 'Bagaimana'
         },
         8: {
-            1: "Kurang peka",
+            1: 'Kurang peka',
             2: 'Sering Lupa Janji',
             3: 'Lambat dalam  pekerjaan',
             4: 'Banyak khawatir'
@@ -181,7 +180,7 @@ app.controller('MainController',['$scope', function($scope){
     $scope.i = 0;
     $scope.s = 0;
     $scope.c = 0;
-    $scope.hasil = '';
+    
 
     $scope.kuncis = [
         [],
@@ -212,38 +211,35 @@ app.controller('MainController',['$scope', function($scope){
     // $scope.hasil = 'd';
 
     function goToResult(){
-        $scope.menu = 'hasil';
+        $rootScope.menu = 'hasil';
     }
 
     $scope.selengkapnya = function(){
-        $scope.menu = 'detail';
+        window.location = $rootScope.hasil+'-'+$rootScope.gender+'.html';
     };
 
     $scope.genderHome = function(hasil){
-        $scope.menu = 'genderHome';
-        $scope.hasil = hasil;
+        $rootScope.menu = 'genderHome';
+        $rootScope.hasil = hasil;
     };
 
     $scope.detailFromMenu = function(gender){
-        $scope.menu = 'detail';
-        $scope.gender = gender;
+        window.location = $rootScope.hasil+'-'+gender+'.html';
     };
-
-    
 
     function calculate(){
         if ($scope.d === $scope.i && $scope.d === $scope.s && $scope.d === $scope.c){
-            $scope.hasil = 's';
+            $rootScope.hasil = 's';
         } else if ($scope.d > $scope.i && $scope.d > $scope.s && $scope.d > $scope.c) {
-            $scope.hasil = 'd';
+            $rootScope.hasil = 'd';
         } else if ($scope.i > $scope.d && $scope.i > $scope.s && $scope.i > $scope.c) {
-            $scope.hasil = 'i';
+            $rootScope.hasil = 'i';
         } else if ($scope.s > $scope.d && $scope.s > $scope.i && $scope.s > $scope.c) {
-            $scope.hasil = 's';
+            $rootScope.hasil = 's';
         } else if ($scope.c > $scope.d && $scope.c > $scope.i && $scope.c > $scope.s) {
-            $scope.hasil = 'c';
+            $rootScope.hasil = 'c';
         } else {
-            $scope.hasil  = 'i';
+            $rootScope.hasil  = 'i';
         }
 
         goToResult();
@@ -287,4 +283,4 @@ app.controller('MainController',['$scope', function($scope){
         }
     };
 
-}]);
+});

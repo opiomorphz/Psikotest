@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/animated.css" />
+        <title>Psikotest</title>
+    </head>
+    <body ng-app="PsikotestApp">
+        <div>
+            
+            <div >
+                <section id="about" class="background">
+                    <span class="menu dropdown">
+                        <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
+                            <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
+                            <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
+                        </div>
+                    </span>
+                    <img class="back" src="image/bg/about.jpg" alt="">
+                    <div class="about-wrapper">
+                        <div class="about-item">
+                            <span class="about-1 pos-left wow bounceInDown" data-wow-delay=".1s">
+                                <img src="image/about-1.png" alt="">
+                            </span>
+                            <span class="about-2 wow bounceInDown" data-wow-delay=".3s">
+                                <img src="image/about-2.png" alt="">
+                            </span>
+                            <span class="about-3 pos-right wow bounceInDown" data-wow-delay=".5s">
+                                <img src="image/about-3.png" alt="">
+                            </span>
+                        </div>
+                    </div>
+                    
+                </section>
+            </div>
+
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="js/wow.js"></script> 
+
+        <script>
+            new WOW().init();
+        </script>
+
+        <script>
+            setTimeout(function() {         
+                $('.about-1').removeClass('pos-left');
+                $('.about-1').addClass('slide-left');
+                $('.about-3').addClass('slide-right');
+            }, 1500 );
+        </script>
+        
+        <script src="js/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/MainController.js"> </script>
+        <script src="js/DPriaController.js"> </script>
+        <script src="js/DWanitaController.js"> </script>
+        <script src="js/IPriaController.js"> </script>
+        <script src="js/IWanitaController.js"> </script>
+        <script src="js/SPriaController.js"> </script>
+        <script src="js/SWanitaController.js"> </script>
+        <script src="js/CPriaController.js"> </script>
+        <script src="js/CWanitaController.js"> </script>
+        
+
+        <!-- directive -->
+        <!-- <script src="js/directives/menu.js"> </script> -->
+    
+    </body>
+</html>
