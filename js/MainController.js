@@ -60,7 +60,7 @@ app.controller('MainController', function($scope, $rootScope){
             1: 'Dilakukan bersama-sama',
             2: 'Dilakukan dengan benar',
             3: 'Dilakukan sekarang',
-            4: 'Dilakukan sekarang'
+            4: 'Dilakukan dengan menyenangkan'
         },
         4: {
             1: 'Menyenangkan orang lain',
@@ -72,7 +72,7 @@ app.controller('MainController', function($scope, $rootScope){
             1: 'Senang mengatur',
             2: 'Senang meyakinkan orang lain',
             3: 'Senang memdukung orang lain',
-            4: 'Senang kualitan tinggi'
+            4: 'Senang kualitas tinggi'
         },
         6: {
             1: 'Prestasi. Uang',
