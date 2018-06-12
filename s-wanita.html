@@ -22,12 +22,21 @@
                         <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
                     </div>
                 </span>
+                <div id="scrollNav" class="right-nav-wrapper">
+                    <ul>
+                        <li><a class="scroll" href="#page1"></a></li>
+                        <li><a class="scroll" href="#page2"></a></li>
+                        <li><a class="scroll" href="#page3"></a></li>
+                        <li><a class="scroll" href="#page4"></a></li>
+                        <li><a class="scroll" href="#page5"></a></li>
+                    </ul>
+                </div>
                 <section id="detail" class="background">
                     <div ng-if="hasil == 'd'">
-                        <div class="part">
+                        <div id="page1" class="part">
                             <img src="image/detail/1/awal-{{gender}}.gif" alt="">
                         </div>
-                        <div class="part">
+                        <div id="page2" class="part">
                             <img src="image/detail/1/bg-2.png" alt="">
                             <div class="title-wrapper">
                                 <span class="title red">Karakter umum</span>
@@ -61,7 +70,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page3" class="part">
                             <img src="image/detail/1/lingkungan-{{gender}}.jpg" alt="">
                             <div class="awan-left-wrapper">
                                 <div class="awan d"></div>
@@ -80,7 +89,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page4" class="part">
                             <img src="image/detail/1/bg-4.png" alt="">
                             <div class="title-wrapper" style="top: 150px;">
                                 <span class="title red">Pekerjaan</span>
@@ -102,7 +111,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page5" class="part">
                             <img src="image/detail/1/bg-5.png" alt="">
                             <div class="title-wrapper" style="top: 150px;">
                                 <span class="title red">Tokoh dengan tipe D</span>
@@ -126,10 +135,10 @@
                         </div>
                     </div>
                     <div ng-if="hasil == 'i'">
-                        <div class="part">
+                        <div id="page1" class="part">
                             <img src="image/detail/2/awal-{{gender}}.gif" alt="">
                         </div>
-                        <div class="part">
+                        <div id="page2" class="part">
                             <img src="image/detail/2/bg-2.png" alt="">
                             <div class="title-wrapper">
                                 <span class="title yellow">Karakter umum</span>
@@ -163,7 +172,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page3" class="part">
                             <img src="image/detail/2/lingkungan-{{gender}}.jpg" alt="">
                             <div class="awan-left-wrapper">
                                 <div class="awan i"></div>
@@ -182,7 +191,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page4" class="part">
                             <img src="image/detail/2/bg-4.png" alt="">
                             <div class="title-wrapper" style="top: 150px;">
                                 <span class="title yellow">Pekerjaan</span>
@@ -204,7 +213,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page5" class="part">
                             <img src="image/detail/2/bg-5.jpg" alt="">
                             <div class="title-wrapper" style="top: 150px;">
                                 <span class="title yellow">Tokoh dengan tipe D</span>
@@ -228,10 +237,10 @@
                         </div>
                     </div>
                     <div ng-if="hasil == 's'">
-                        <div class="part">
+                        <div id="page1" class="part">
                             <img src="image/detail/3/awal-{{gender}}.gif" alt="">
                         </div>
-                        <div class="part">
+                        <div id="page2" class="part">
                             <img src="image/detail/3/bg-2.png" alt="">
                             <div class="title-wrapper">
                                 <span class="title green">Karakter umum</span>
@@ -265,7 +274,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page3" class="part">
                             <img src="image/detail/3/lingkungan-{{gender}}.jpg" alt="">
                             <div class="awan-left-wrapper">
                                 <div class="awan s"></div>
@@ -284,7 +293,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page4" class="part">
                             <img src="image/detail/3/bg-4.png" alt="">
                             <div class="title-wrapper" style="top: 150px;">
                                 <span class="title green">Pekerjaan</span>
@@ -306,7 +315,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page5" class="part">
                             <img src="image/detail/3/bg-5.png" alt="">
                             <div class="title-wrapper" style="top: 150px;">
                                 <span class="title green">Tokoh dengan tipe D</span>
@@ -330,10 +339,10 @@
                         </div>
                     </div>
                     <div ng-if="hasil == 'c'">
-                        <div class="part">
+                        <div id="page1" class="part">
                             <img src="image/detail/4/awal-{{gender}}.gif" alt="">
                         </div>
-                        <div class="part">
+                        <div id="page2" class="part">
                             <img src="image/detail/4/bg-2.png" alt="">
                             <div class="title-wrapper">
                                 <span class="title blue">Karakter umum</span>
@@ -367,7 +376,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page3" class="part">
                             <img src="image/detail/4/lingkungan-{{gender}}.jpg" alt="">
                             <div class="awan-left-wrapper">
                                 <div class="awan c"></div>
@@ -386,7 +395,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page4" class="part">
                             <img src="image/detail/4/bg-4.png" alt="">
                             <div class="title-wrapper" style="top: 150px;">
                                 <span class="title blue">Pekerjaan</span>
@@ -408,7 +417,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="part">
+                        <div id="page5" class="part">
                             <img src="image/detail/4/bg-5.png" alt="">
                             <div class="title-wrapper" style="top: 150px;">
                                 <span class="title blue">Tokoh dengan tipe D</span>
@@ -441,7 +450,8 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script> 
-        <script src="js/wow.js"></script> 
+        <script src="js/wow.js"></script>
+        <script src="js/scroll.js"></script>
 
         <script>
             new WOW().init();

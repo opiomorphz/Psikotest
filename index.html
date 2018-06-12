@@ -14,6 +14,15 @@
     <body ng-app="PsikotestApp">
         <div ng-controller="MainController">
             <div ng-if="menu == 'home'" >
+                <div id="scrollNav" class="right-nav-wrapper">
+                    <ul>
+                        <li><a class="scroll" href="#page1"></a></li>
+                        <li><a class="scroll" href="#page2"></a></li>
+                        <li><a class="scroll" href="#page3"></a></li>
+                        <li><a class="scroll" href="#page4"></a></li>
+                        <li><a class="scroll" href="#page5"></a></li>
+                    </ul>
+                </div>
                 <section id="page1" class="background">
                     <span class="menu dropdown">
                         <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
@@ -123,62 +132,6 @@
                         <span class="orang-4">
                             <img src="image/orang-4.png" alt="">
                         </span>
-                    </div>
-                </section>
-            </div>
-
-            <div ng-if="menu == 'about'">
-                <section id="about" class="background">
-                    <span class="menu dropdown">
-                        <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
-                            <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
-                            <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
-                        </div>
-                    </span>
-                    <img class="back" src="image/bg/about.jpg" alt="">
-                    <div class="about-wrapper">
-                        <div class="about-item">
-                            <span class="about-1">
-                                <img src="image/about-1.png" alt="">
-                            </span>
-                            <span class="about-2">
-                                <img src="image/about-2.png" alt="">
-                            </span>
-                            <span class="about-3">
-                                <img src="image/about-3.png" alt="">
-                            </span>
-                        </div>
-                    </div>
-                    
-                </section>
-            </div>
-
-            <div ng-if="menu == 'download'">
-                <span class="menu dropdown">
-                    <span class="btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" ng-click="changeMenu('home')" href="#">home</a>
-                        <a class="dropdown-item" ng-click="changeMenu('about')">about DISC</a>
-                        <a class="dropdown-item" ng-click="changeMenu('download')">download</a>
-                    </div>
-                </span>
-                <section id="download" class="background">
-                    <div class="download-title-wrapper">
-                        <span class="download-title">Wallpaper</span>
-                    </div>
-                    <div class="download-wrapper">
-                        <div class="bg">
-                            <img src="image/bg/download.jpg" alt="">
-                        </div>
-                        <div class="img" ng-repeat="download in downloads">
-                            <div class="black"></div>
-                            <img src="image/download/{{download}}.png" alt="">
-                            <a href="image/download/{{download}}-full.jpg" download="image">
-                                <img class="ico-download" src="image/download.png" alt="">
-                            </a>
-                        </div>
                     </div>
                 </section>
             </div>
@@ -831,10 +784,11 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script> 
         <script src="js/wow.js"></script> 
-
+        <script src="js/scroll.js"></script> 
         <script>
             new WOW().init();
         </script>
+
         
         <script src="js/angular.min.js"></script>
         <script src="js/app.js"></script>

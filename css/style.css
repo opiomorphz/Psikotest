@@ -35,50 +35,29 @@ body {
   .menu .btn:hover {
     opacity: 0.6; }
 
-.delay05 {
-  animation-delay: 0.5s; }
-
-.delay1 {
-  animation-delay: 1s; }
-
-.delay15 {
-  animation-delay: 1.5s; }
-
-.delay2 {
-  animation-delay: 2s; }
-
-.delay25 {
-  animation-delay: 25s; }
-
-.delay3 {
-  animation-delay: 3s; }
-
-.delay35 {
-  animation-delay: 35s; }
-
-.delay4 {
-  animation-delay: 4s; }
-
-.delay45 {
-  animation-delay: 45s; }
-
-.delay5 {
-  animation-delay: 5s; }
-
-.delay55 {
-  animation-delay: 55s; }
-
-.delay6 {
-  animation-delay: 6s; }
-
-.delay65 {
-  animation-delay: 65s; }
-
-.delay7 {
-  animation-delay: 7s; }
-
-.delay75 {
-  animation-delay: 75s; }
+.right-nav-wrapper {
+  position: fixed;
+  padding: 0;
+  right: 50px;
+  z-index: 10;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 20px; }
+  .right-nav-wrapper ul {
+    list-style: none; }
+    .right-nav-wrapper ul li {
+      margin: 10px 0; }
+      .right-nav-wrapper ul li a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #383838;
+        background: rgba(242, 188, 63, 0); }
+      .right-nav-wrapper ul li a:hover, .right-nav-wrapper ul li .active {
+        background: #f3be3e;
+        border: 1px solid #f3be3e; }
 
 #page1 {
   position: relative;
