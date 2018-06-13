@@ -281,7 +281,7 @@ body {
     z-index: 1;
     width: 100%;
     position: absolute;
-    top: 300px; }
+    top: 270px; }
     #about .about-wrapper .about-item {
       width: 329px;
       margin: 0 auto;
@@ -308,23 +308,23 @@ body {
       opacity: 0.6; }
 
 .pos-left {
-  top: -80px;
-  left: -340px; }
+  top: -56px;
+  left: -310px; }
 
 .pos-right {
-  top: -55px;
+  top: -47px;
   right: -300px; }
 
 .slide-left {
-  top: -79px;
-  left: -298px;
+  top: -56px;
+  left: -278px;
   -webkit-transition: left 0.6s;
   /* Safari */
   transition: left .6s; }
 
 .slide-right {
-  right: -259px;
-  top: -54px;
+  right: -267px;
+  top: -47px;
   -webkit-transition: right 0.6s;
   /* Safari */
   transition: right .6s; }

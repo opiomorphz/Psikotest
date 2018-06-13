@@ -7,8 +7,13 @@ app.run(['$rootScope', function($rootScope){
         } else if (menu === 'about'){
             window.location = 'about.html';
         } else if (menu === 'download'){
-            window.location = 'download.html'
-        }else {
+            window.location = 'download.html';
+        }else if (menu === 'caraPengerjaan'){
+            window.location = 'pengerjaan.html';
+        } else if (menu === 'gender'){
+            window.location = 'gender.html';
+            $rootScope.menu = menu;
+        } else {
             $rootScope.menu = menu;
         }
     };
