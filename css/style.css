@@ -330,7 +330,8 @@ body {
   transition: right .6s; }
 
 #gender {
-  position: relative; }
+  position: relative;
+  width: 100%; }
   #gender .about {
     z-index: 1;
     width: 100%;
