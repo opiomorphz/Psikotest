@@ -660,7 +660,8 @@ body {
       left: 140px; }
       #detail .part .awan-left-wrapper .awan {
         width: 307px;
-        height: 209px; }
+        height: 209px;
+        cursor: pointer; }
         #detail .part .awan-left-wrapper .awan.d {
           background-image: url("../image/detail/1/awan-hitam.png"); }
         #detail .part .awan-left-wrapper .awan.i {
@@ -690,7 +691,8 @@ body {
       right: 140px; }
       #detail .part .awan-right-wrapper .awan {
         width: 307px;
-        height: 209px; }
+        height: 209px;
+        cursor: pointer; }
         #detail .part .awan-right-wrapper .awan.d {
           background-image: url("../image/detail/1/awan-putih.jpg"); }
         #detail .part .awan-right-wrapper .awan.i {
