@@ -283,14 +283,14 @@ body {
     position: absolute;
     top: 270px; }
     #about .about-wrapper .about-item {
-      width: 329px;
+      width: 409px;
       margin: 0 auto;
       position: relative; }
       #about .about-wrapper .about-item .about-1 {
         width: 329px;
         position: absolute; }
       #about .about-wrapper .about-item .about-2 {
-        width: 299px;
+        width: 409px;
         position: absolute; }
       #about .about-wrapper .about-item .about-3 {
         width: 320px;
@@ -312,8 +312,8 @@ body {
   left: -310px; }
 
 .pos-right {
-  top: -47px;
-  right: -300px; }
+  top: -46px;
+  right: -230px; }
 
 .slide-left {
   top: -56px;
@@ -323,7 +323,7 @@ body {
   transition: left .6s; }
 
 .slide-right {
-  right: -267px;
+  right: -187px;
   top: -47px;
   -webkit-transition: right 0.6s;
   /* Safari */
