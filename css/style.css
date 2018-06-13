@@ -332,6 +332,8 @@ body {
 #gender {
   position: relative;
   width: 100%; }
+  #gender .img {
+    width: 100%; }
   #gender .about {
     z-index: 1;
     width: 100%;
