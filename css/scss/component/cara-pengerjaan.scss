@@ -36,6 +36,14 @@
             width: 100%;
             text-align: center;
             top: 440px;
+            .btn{
+                background-image: url('../image/btn-ok.png');
+                width: 249px;
+                height: 124px;
+            }
+            .btn:hover{
+                background-image: url('../image/btn-ok-hover.png');
+            }
         }
     }
     .about{

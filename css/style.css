@@ -404,6 +404,12 @@ body {
       width: 100%;
       text-align: center;
       top: 440px; }
+      #caraPengerjaan .cara-pengerjaan-wrapper .btn-ok .btn {
+        background-image: url("../image/btn-ok.png");
+        width: 249px;
+        height: 124px; }
+      #caraPengerjaan .cara-pengerjaan-wrapper .btn-ok .btn:hover {
+        background-image: url("../image/btn-ok-hover.png"); }
   #caraPengerjaan .about {
     z-index: 1;
     width: 100%;
